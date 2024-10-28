@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgb(11, 0, 25);
+}
+
+li {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 50px 10px;
+}
