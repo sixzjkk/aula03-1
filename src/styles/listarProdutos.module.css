@@ -14,7 +14,7 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 40px;
+    font-size: 2.5em;
     color: #ffffff;
     margin-bottom: 20px;
 }
@@ -48,7 +48,8 @@ nav a:hover {
     border-radius: 15px;
     padding: 20px;
     margin: 10px;
-    width: 280px;
+    width: calc(100% - 40px);
+    max-width: 280px;
     height: auto;
     text-align: center;
     display: flex;
@@ -66,7 +67,7 @@ nav a:hover {
 }
 
 .bloco h2 {
-    font-size: 20px;
+    font-size: 1.5em;
     color: #003366;
     margin: 10px 0 5px;
 }
@@ -74,7 +75,7 @@ nav a:hover {
 .bloco p {
     color: #555;
     margin: 5px 0;
-    font-size: 16px;
+    font-size: 1em;
     overflow: hidden;
     text-align: left;
     flex-grow: 1;
@@ -86,7 +87,7 @@ nav a:hover {
     border: none;
     border-radius: 5px;
     padding: 15px 20px;
-    font-size: 18px;
+    font-size: 1em;
     cursor: pointer;
     transition: 0.5s;
     width: 100%;
@@ -106,4 +107,29 @@ footer {
     padding: 15px 0;
     position: relative;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+    
+    .bloco li {
+        width: calc(100% - 20px);
+        max-width: none;
+    }
+
+    .precoBotao {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .bloco li {
+        width: 100%;
+    }
 }
