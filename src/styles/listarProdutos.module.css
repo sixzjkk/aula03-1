@@ -1,37 +1,44 @@
 body {
-    background-color: #d2d6dc;
+    background-color: #f9f9f9;
     margin: 0;
     font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
 header {
-    background-color: rgba(0, 31, 63, 0.9);
-    color: white;
+    background-color: #fff;
+    color: #000;
     padding: 40px 20px;
     text-align: center;
-    position: relative;
+    border-bottom: 2px solid #eee;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
-    color: #ffffff;
-    margin-bottom: 20px;
+    font-size: 40px;
+    color: #000;
+    font-weight: normal;
+    margin-bottom: 10px;
 }
 
 nav a {
     margin: 5px 15px;
-    color: #d2d6dc;
+    color: #333;
     text-decoration: none;
     font-weight: bold;
-    transition: 0.5s;
-    cursor: pointer;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    transition: 1s;
+    color: #000;
     text-decoration: underline;
-    color: #ffffff;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 0;
 }
 
 .bloco {
@@ -43,90 +50,95 @@ nav a:hover {
 }
 
 .bloco li {
-    background-color: rgba(255, 255, 255, 0.85);
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     padding: 20px;
-    margin: 10px;
+    margin: 15px;
     width: calc(100% - 40px);
     max-width: 280px;
     height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
     position: relative;
 }
 
+.bloco li:hover {
+    transform: translateY(-5px);
+}
+
 .bloco img {
-    border-radius: 15px;
+    border-radius: 8px;
     width: 100%;
     height: 350px;
     object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .bloco h2 {
-    font-size: 1.5em;
-    color: #003366;
+    font-size: 21px;
+    color: #000;
     margin: 10px 0 5px;
 }
 
 .bloco p {
-    color: #555;
+    color: #777;
     margin: 5px 0;
-    font-size: 1em;
+    font-size: 14px;
     overflow: hidden;
     text-align: left;
     flex-grow: 1;
 }
 
 .precoBotao {
-    background-color: rgba(0, 31, 63, 0.9);
-    color: #ffffff;
+    background-color: #000;
+    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 15px 20px;
-    font-size: 1em;
+    font-size: 16px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
     width: 100%;
     margin-top: 10px;
 }
 
 .precoBotao:hover {
-    background-color: rgb(1, 32, 63);
-    transition: 0.5s;
+    background-color: #333;
+    transition: 0.3s;
     transform: scale(1.05);
 }
 
 footer {
-    background-color: rgba(0, 31, 63, 0.9);
-    color: white;
+    background-color: #fff;
+    color: #000;
     text-align: center;
     padding: 15px 0;
+    border-top: 2px solid #eee;
     position: relative;
     margin-top: 20px;
 }
 
 @media (max-width: 768px) {
     header h1 {
-        font-size: 2em;
+        font-size: 32px;
     }
-    
+
     .bloco li {
-        width: calc(100% - 20px);
-        max-width: none;
+        width: calc(50% - 30px);
     }
 
     .precoBotao {
-        font-size: 0.9em;
+        font-size: 14px;
     }
 }
 
 @media (max-width: 480px) {
     header h1 {
-        font-size: 1.5em;
+        font-size: 24px;
     }
 
     .bloco li {

@@ -1,4 +1,5 @@
 import styles from '../styles/listarProdutos.module.css';
+import Loading from "./Loading";
 
 export default function ListarProdutos({ lista }) {
     if (lista.length == 0) {
@@ -6,7 +7,7 @@ export default function ListarProdutos({ lista }) {
             <Loading/>
         )
     }
-    
+
     return (
         <>
             <ul className={styles.bloco}>
